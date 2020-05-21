@@ -1,0 +1,28 @@
+{
+  "name": "stackoverflow",
+  "version": "1.0.0",
+  "description": "list of questions test for iqm",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "stack",
+    "overflow"
+  ],
+  "author": "Alain Dimabuyo",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
